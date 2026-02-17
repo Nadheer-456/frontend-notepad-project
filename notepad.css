@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+/* ===== NAVBAR ===== */
+.title {
+    width: 100%;
+    padding: 20px 30px;
+    background: #111;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ===== NOTES GRID ===== */
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.notes {
+    background: #fff;
+    color: #222;
+    width: 280px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.25s ease;
+}
+
+.notes:hover {
+    transform: translateY(-5px);
+}
+
+.notes h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fd456f;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-height:120px;
+    overflow-y:auto;
+}
+
+.notes h5 {
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-height:120px;
+    overflow-y:auto;
+}
+
+.notes button {
+    background: #fd456f;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.notes button:hover {
+    background: #e63b60;
+}
+
+/* ===== ADD BUTTON ===== */
+.add {
+    background: #111;
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
+}
+
+.add:hover {
+    transform: scale(1.05);
+}
+
+/* ===== POPUP ===== */
+.popupoverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    margin-bottom: 10px;
+}
+
+.popup input,
+.popup textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.popup textarea {
+    resize: none;
+    height: 80px;
+}
+
+.popup-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.popup button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background: #111;
+    color: #fff;
+}
+
+.cancel-btn {
+    background: #ddd;
+}
+
+@media(max-width:500px) {
+    .popup {
+        width: 90%;
+    }
+}

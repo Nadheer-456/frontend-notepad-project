@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad UI</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="notepad.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="title">Notepad</div>
+
+    <div class="notes-container">
+      <div class="notes">
+        <h1>Title</h1>
+        <h5>Notes something here</h5>
+        <button onclick="del(event)">Delete</button>
+      </div>
+    </div>
+
+    <button class="add" onclick="pop()">+</button>
+
+    <div class="popupoverlay"></div>
+
+    <div class="popup">
+      <h2>Add Note</h2>
+      <input type="text" placeholder="Title" id="input-title" />
+      <textarea placeholder="Write your notes..." id="input-text"></textarea>
+      <div class="popup-buttons">
+        <button class="save-btn">Save</button>
+        <button class="cancel-btn" onclick="popclose()">Cancel</button>
+      </div>
+    </div>
+
+    <script src="notepad.js"></script>
+  </body>
+</html>
