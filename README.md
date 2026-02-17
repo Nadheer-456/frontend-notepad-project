@@ -9,16 +9,6 @@ frameworks.
 
 ------------------------------------------------------------------------
 
-## 🚀 Live Demo
-
-👉 Add your Vercel link here
-
-## 💻 GitHub Repository
-
-👉 Add your GitHub repo link here
-
-------------------------------------------------------------------------
-
 ## ✨ Features
 
 -   Add notes dynamically
