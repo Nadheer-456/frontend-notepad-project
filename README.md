@@ -42,8 +42,10 @@ frameworks.
 
     notepad-ui/
     │
-    ├── index.html
-    └── README.md
+    |-- index.html
+    |-- notepad.css
+    |-- notedpad.js
+    |-- README.md
 
 ------------------------------------------------------------------------
 
